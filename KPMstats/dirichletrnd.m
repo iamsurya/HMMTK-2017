@@ -17,7 +17,7 @@ function x = dirichletrnd(alpha)
 %-------------------------------------------------
 % Check the input
 %-------------------------------------------------
-error(nargchk(1,1,nargin));
+error(narginchk(1,1));
 
 if min(size(alpha)) ~= 1 | length(alpha) < 2
     error('alpha must be a vector of length at least 2');

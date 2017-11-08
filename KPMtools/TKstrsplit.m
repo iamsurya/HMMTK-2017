@@ -1,4 +1,4 @@
-function parts = strsplit(splitstr, str, option)
+function parts = TKstrsplit(splitstr, str, option)
 %STRSPLIT Split string into pieces.
 %
 %   STRSPLIT(SPLITSTR, STR, OPTION) splits the string STR at every occurrence
@@ -18,7 +18,7 @@ function parts = strsplit(splitstr, str, option)
 %   URL:         http://home.online.no/~pjacklam
 
    nargsin = nargin;
-   error(nargchk(2, 3, nargsin));
+   error(narginchk(2, 3));
    if nargsin < 3
       option = 'omit';
    else

@@ -36,7 +36,7 @@ function [beta,p,lli] = logist2(y,x,w)
 % Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
 % 02111-1307, USA, or see http://www.gnu.org/copyleft/gpl.html.
 
-error(nargchk(2,3,nargin));
+error(narginchk(2,3));
 
 % check inputs
 if size(y,2) ~= 1,

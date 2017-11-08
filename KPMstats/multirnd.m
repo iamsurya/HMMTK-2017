@@ -12,7 +12,7 @@ function r = multirnd(theta,k)
 %--------------------------------------------------------
 % Check the arguments.
 %--------------------------------------------------------
-error(nargchk(1,2,nargin));
+error(narginchk(1,2));
 
 % make sure theta is a vector
 if ndims(theta) > 2 | all(size(theta) > 1)

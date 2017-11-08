@@ -9,7 +9,7 @@ function p = dirichletpdf(x, alpha)
 %-------------------------------------------------
 % Check the input
 %-------------------------------------------------
-error(nargchk(2,2,nargin));
+error(narginchk(2,2));
 
 % enusre alpha is a vector
 if min(size(alpha)) ~= 1 | ndims(alpha) > 2 | length(alpha) == 1

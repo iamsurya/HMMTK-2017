@@ -44,7 +44,7 @@ function [post,lik,lli] = logistK_eval(beta,x,y)
 % Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
 % 02111-1307, USA, or see http://www.gnu.org/copyleft/gpl.html.
 
-error(nargchk(2,3,nargin));
+error(narginchk(2,3));
 
 % check sizes
 if size(beta,1) ~= size(x,1),

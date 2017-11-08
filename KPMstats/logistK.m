@@ -47,7 +47,7 @@ function [beta,post,lli] = logistK(x,y,w,beta)
 
 % TODO - this code would be faster if x were transposed
 
-error(nargchk(2,4,nargin));
+error(narginchk(2,4));
 
 debug = 0;
 if debug>0,

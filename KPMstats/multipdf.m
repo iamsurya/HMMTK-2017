@@ -9,7 +9,7 @@ function p = multipdf(x,theta)
 %--------------------------------------------------------
 % Check the arguments.
 %--------------------------------------------------------
-error(nargchk(2,2,nargin));
+error(narginchk(2,2));
 
 % make sure theta is a vector
 if ndims(theta) > 2 | all(size(theta) > 1)
